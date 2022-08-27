@@ -1,0 +1,2 @@
+Q) Apply a change on every element in the dataframe ?
+A) DataFrame.applymap(func, na_action=None, **kwargs) ; https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.applymap.html
