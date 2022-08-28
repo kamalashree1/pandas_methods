@@ -1,2 +1,23 @@
-Q) Apply a change on every element in the dataframe ?
-A) DataFrame.applymap(func, na_action=None, **kwargs) ; https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.applymap.html
+q- Apply a change on every element in the dataframe ? 
+a- DataFrame.applymap(func, na_action=None, **kwargs) ; https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.applymap.html
+
+q- sorting objects in a column based on labels and axis ?
+a- DataFrame.sort_index(axis=0, level=None, ascending=True, inplace=False, kind='quicksort', na_position='last', sort_remaining=True, ignore_index=False, key=None); https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_index.html
+
+q- are values in the series unique ?
+a- Series.is_unique ; https://pandas.pydata.org/docs/reference/api/pandas.Series.is_unique.html
+
+q- data is space seperated ?
+a- pd.read_csv(your file name, delim_whitespace = True) ; https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
+
+q- few columns to be considered as dates ? 
+a- pd.read_csv(your file name, parse_dates= give a list of columns you want arranged as dates) ;https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
+
+q- concatenate dataframes along an axis you want, can also add heirarchical axis on the concatenated axis when the labels are the same ?
+a- pandas.concat(objs, axis=0, join='outer', ignore_index=False, keys=None, levels=None, names=None, verify_integrity=False, sort=False, copy=True) ; https://pandas.pydata.org/docs/reference/api/pandas.concat.html
+
+q- get an array of a range of integers ?
+a- np.random.randint(low, high=None, size=None, dtype=int); https://numpy.org/doc/stable/reference/random/generated/numpy.random.randint.html
+
+q- get the index of the maximum value along an axis ?
+a- DataFrame.idxmax(axis=0, skipna=True) ; https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.idxmax.html
