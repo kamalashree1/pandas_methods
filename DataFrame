@@ -21,3 +21,12 @@ a- np.random.randint(low, high=None, size=None, dtype=int); https://numpy.org/do
 
 q- get the index of the maximum value along an axis ?
 a- DataFrame.idxmax(axis=0, skipna=True) ; https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.idxmax.html
+
+q- return the first 'n' rows of the largest values in required dataframe ? 
+a- DataFrame.nlargest(n, columns, keep='first') ; https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.nlargest.html
+
+q- sum of values over a required axis ? note the use of level, when dealing with multiindex axis
+a- DataFrame.sum(axis=None, skipna=True, level=None, numeric_only=None, min_count=0, **kwargs) ; https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sum.html
+
+q- Remove duplicate rows, you can control which columns to focus for duplicates on, which occurence to keep ?
+a- DataFrame.drop_duplicates(subset=None, keep='first', inplace=False, ignore_index=False);https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html
